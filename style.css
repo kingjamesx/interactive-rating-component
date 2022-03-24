@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 360px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
+}
+h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.icon {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 8%);
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.btn {
+  border-radius: 50%;
+  padding: 12px 16px;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(216, 12%, 54%);
+  border: none;
+  cursor: pointer;
+}
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 12px 140px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.btn:active {
+  color: hsl(0, 0%, 100%);
+  background: hsl(25, 97%, 53%);
+}
+.submit:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+/* Thank you card */
+.two {
+  align-items: center;
+  text-align: center;
+
+  display: none;
+}
+.img-two {
+  max-width: 120px;
+}
+.select {
+  background-color: hsl(216, 12%, 8%);
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+.color {
+  background: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.display {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 320px;
+    margin: 150px auto;
+  }
+  .btn {
+    padding: 12px 16px;
+  }
+  .list {
+    gap: 15px;
+  }
+  .submit {
+    padding: 12px 100px;
+  }
+}
